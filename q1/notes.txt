@@ -1,0 +1,88 @@
+Cipher IoC: 0.06576
+Monoalphabetic, IoC very similar to english
+
+(IoC ref:  Friedman, W.F. (1922). "The index of coincidence and its applications in cryptology". Department of Ciphers. Publ 22. Geneva, Illinois, USA: Riverbank Laboratories. OCLC 55786052.)
+
+Includes punctuation and spaces, assume correct
+
+Cipher letter frequency ranking:
+['v', 'h', 'z', 'i', 'm', 'n', 'j', 'q', 'x', 'd', 's', 'u', 'y', 'p', 't', 'g', 'b', 'l', 'e', 'w', 'f', 'o', 'a', 'c', 'k', 'r']
+
+English letter frequencies:
+['e', 't', 'a', 'o', 'i', 'n', 's', 'r', 'h', 'd', 'l', 'u', 'c', 'm', 'f', 'y', 'w', 'g', 'p', 'b', 'v', 'k', 'x', 'q', 'j', 'z']
+
+Not permutation cipher, frequences very different to english
+Assume substitution
+Assume for each letter l with rank r in cipher alphabet, corresponding plaintext letter l' is letter with rank r in english alphabet
+
+(English text frequencies ref:  "Frequency Table". cornell.edu. Retrieved 2021-02-15.)
+
+abcdefghijklmnopqrstuvwxyz
+xwqdpvytosjginkmrzlfuebhca
+
+cefdn inhe a racisatisw nivertw fsipn inrw in odrdhin, tle naoa team nip fsipo tleoe uiseoto iu vestdhar hascin tyceo in himminrw yoeb ogahehsaut matesdaro, oyhl ao tdtandym, higges anb otadnreoo oteer. tdnw fago cetpeen tle tyceo hirreht anb tsag rdflt, pldre tle hascin acoisco tle glitino, gseventdnf tlem usim seurehtdnf iuu oysuaheo. cehayoe inrw a omarr usahtdin iu rdflt seurehto iuu tle hiatdnf, tle lyman ewe anb oenodtdve betehtiso oee tle matesdar ao crahk.
+
+Not correct but some words look close
+Assume tLe = tHe (hSv = tHe)
+Assume anB = anD (znW = anD)
+
+
+override key with s = h, w = d
+new result:
+xwqbpvytosjginkmrzhfuedlca
+
+cefbn inle a racisatisw nivertw fsipn inrw in obrblin, the naoa team nip fsipo theoe uiseoto iu vestblar lascin tyceo in limminrw yoed ogalelsaut matesbaro, oylh ao tbtanbym, ligges and otabnreoo oteer. tbnw fago cetpeen the tyceo lirrelt and tsag rbfht, phbre the lascin acoisco the ghitino, gseventbnf them usim seureltbnf iuu oysualeo. celayoe inrw a omarr usaltbin iu rbfht seurelto iuu the liatbnf, the hyman ewe and oenobtbve deteltiso oee the matesbar ao cralk.
+
+only assuming the, and, team, and them are correct (adehmnt). with only these substitutions:
+abcdefghijklmnopqrstuvwxyz
+#######t#####n#m##h##ed##a
+zyxwvutsrqponmlkjihgfedcba
+
+key has similarities to reverse alphabet order. Using reverse alphabet key masked with earlier observations:
+
+begwn nnce a jabnqatnqy nnuejty gqnvn nnjy nn rwjwcnn, the nara team nnv gqnvr there fnqertr nf ueqtwcaj caqbnn ttber nn cnmmnnjy tred roacecqaft mateqwajr, rtch ar twtanwtm, cnooeq and rtawnjerr rteej. twny gaor betveen the ttber cnjject and tqao jwght, vhwje the caqbnn abrnqbr the ohntnnr, oqeuentwng them fqnm qefjectwng nff rtqfacer. becatre nnjy a rmajj fqactwnn nf jwght qefjectr nff the cnatwng, the htman eye and renrwtwue detectnqr ree the mateqwaj ar bjacl.
+
+observations:
+
+begWn = begIn? D=I 
+Nnce = Once? M=O
+becaTRe = becaUSe? GI=US
+
+abcdefghijklmnopqrstuvwxyz
+###i##uts###on#m##h##ed##a
+
+begin once a jaboqatoqy nouejty gqovn onjy on sijicon, the nasa team nov gqovs these foqests of ueqticaj caqbon tubes on commonjy used soacecqaft mateqiajs, such as titanium, coooeq and stainjess steej. tiny gaos betveen the tubes cojject and tqao jight, vhije the caqbon absoqbs the ohotons, oqeuenting them fqom qefjecting off suqfaces. because onjy a smajj fqaction of jight qefjects off the coating, the human eye and sensitiue detectoqs see the mateqiaj as bjacl.
+
+near english now, more observations:
+
+commonJy = commonLy q=l
+sOacecQaft = sPacecRaft l=p, j=r
+mateQiaJs = mateRiaLs q=l, j=r
+gaos = gaps l=p
+sensitiue = sensitive f=v
+
+abcdefghijklmnopqrstuvwxyz
+###i#vutsr#pon#ml#h##ed##a
+
+begin once a laboratory novelty grovn only on silicon, the nasa team nov grovs these forests of vertical carbon tubes on commonly used spacecraft materials, such as titanium, copper and stainless steel. tiny gaps betveen the tubes collect and trap light, vhile the carbon absorbs the photons, preventing them from reflecting off surfaces. because only a small fraction of light reflects off the coating, the human eye and sensitive detectors see the material as blacl.
+
+final adjustments: 
+e = w
+o = k
+
+abcdefghijklmnopqrstuvwxyz
+###iwvutsr#ponkml#h##ed##a
+
+begin once a laboratory novelty grown only on silicon, the nasa team now grows these forests of vertical carbon tubes on commonly used spacecraft materials, such as titanium, copper and stainless steel. tiny gaps between the tubes collect and trap light, while the carbon absorbs the photons, preventing them from reflecting off surfaces. because only a small fraction of light reflects off the coating, the human eye and sensitive detectors see the material as black.
+
+Done. Final key: zyxiwvutsrqponkmljhgfedcba
+
+With original casing:
+BEGIN Once a laboratory novelty grown only on silicon, the NASA team now grows these forests of vertical carbon tubes on commonly used spacecraft materials, such as titanium, copper and stainless steel. Tiny gaps between the tubes collect and trap light, while the carbon absorbs the photons, preventing them from reflecting off surfaces. Because only a small fraction of light reflects off the coating, the human eye and sensitive detectors see the material as black.
+
+Note: The cipher text contains no instances of the letters a, c, k or r. Similarly, the letters j, q, x and z do not appear the in plaintext. Consequently, we can deduce only that the encryption key used to create this cipher mapped each letter in the set {A,C,K,R} to some letter in the set {J,Q,X,Z}, but not to which letter specifically. However, we can be almost certain about the positions of these letters in the key due to the structure of the key itself. The key was almost certainly constructed by taking the english alphabet in its regular order, reversing it, removing the letters i and k and then splicing them back in at random locations. Unless some of the letters in {J,Q,X,Z} also happen to have been subject to shuffling similar to i or k (or the key was actually constructed randomly and its similarity to the reverse alphabet is just a freak accident), then the way I have positioned these letters in the final key are correct.
+
+
+
+
+
