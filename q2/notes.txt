@@ -1,0 +1,5 @@
+alternating low/high
+all lows:
+3C 1D 0F 0D 0B 1D 07 4E 57 57 0F 4E 1C 00 0B 01 4E 00 18 1C 07 17 1A 1C 0B 4E 4E 07 07 09 0D 1A 07 1A 4E 4E 0B 0B 06 00 63
+
+Increase all values until valid text

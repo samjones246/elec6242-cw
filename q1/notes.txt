@@ -83,6 +83,7 @@ BEGIN Once a laboratory novelty grown only on silicon, the NASA team now grows t
 Note: The cipher text contains no instances of the letters a, c, k or r. Similarly, the letters j, q, x and z do not appear the in plaintext. Consequently, we can deduce only that the encryption key used to create this cipher mapped each letter in the set {A,C,K,R} to some letter in the set {J,Q,X,Z}, but not to which letter specifically. However, we can be almost certain about the positions of these letters in the key due to the structure of the key itself. The key was almost certainly constructed by taking the english alphabet in its regular order, reversing it, removing the letters i and k and then splicing them back in at random locations. Unless some of the letters in {J,Q,X,Z} also happen to have been subject to shuffling similar to i or k (or the key was actually constructed randomly and its similarity to the reverse alphabet is just a freak accident), then the way I have positioned these letters in the final key are correct.
 
 
-
-
+Evolution:
+https://planetcalc.com/8045/
+http://practicalcryptography.com/cryptanalysis/text-characterisation/quadgrams/
 

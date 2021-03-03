@@ -1,0 +1,30 @@
+ioc similar to english
+0.06853
+frequencies similar to english
+['e', 'n', 'o', 'a', 'r', 't', 's', 'h', 'l', 'i', 'm', 'u', 'v', 'y', 'c', 'p', 'w', 'b', 'd', 'f', 'g', 'j', 'k', 'q', 'x', 'z']
+
+likely permutation cipher
+single capital partway through, likely first letter
+
+66 letters, possible keys 2, 3, 6, 11, 22, 33
+trying 11
+
+h e r a t e
+e m o e r r
+o l c n v a
+e s o v o n
+n u s h e t
+n a n o a y
+h e r l t p
+n e t i a w
+h i n u t o
+s o l r r a
+y s t m s e
+
+here at?
+
+here at emorerol can vesonvonu s then an yoah erpltn e t w i a h i n o u t s o l a r r y s t e m s
+
+volcanoes
+
+there are more volcanoes on venus than any other planet within our solar system
