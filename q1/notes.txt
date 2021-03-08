@@ -11,7 +11,7 @@ Cipher letter frequency ranking:
 English letter frequencies:
 ['e', 't', 'a', 'o', 'i', 'n', 's', 'r', 'h', 'd', 'l', 'u', 'c', 'm', 'f', 'y', 'w', 'g', 'p', 'b', 'v', 'k', 'x', 'q', 'j', 'z']
 
-Not permutation cipher, frequences very different to english
+Not permutation cipher, frequencies very different to english
 Assume substitution
 Assume for each letter l with rank r in cipher alphabet, corresponding plaintext letter l' is letter with rank r in english alphabet
 
